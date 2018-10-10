@@ -1,0 +1,79 @@
+div.main-container-roots {
+  background-color: #fffcfc;  /*background-image: url("https://www.transparenttextures.com/patterns/light-wool.png");*/
+
+  /*Change url to local file*/
+  background-color: #fffafa;/*background-image: url("https://www.transparenttextures.com/patterns/mirrored-squares.png");*/
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+  background-attachment: fixed;
+}
+
+section {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.section-roots-container {
+  display: flex;
+  height: 70%;
+  margin-top: 75px !important;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-box-shadow: 0px 0px 5px lightgray;
+  box-shadow: 0px 0px 5px lightgray;
+}
+
+.section-pair {
+  -webkit-flex-direction: row-reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+}
+
+.section-pictures {
+  width: 40vw;
+  height: 100%;
+  background: red;
+}
+
+.title {
+  width: 40vw;
+  display: flex;
+  height: 100%;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background-color: #fffafa;
+}
+
+div.title-content {
+  width: 75%;
+}
+
+h2.roots-title {
+  font-family: 'Lato', sans-serif;
+  color: #0FABF1;
+  font-size: 160%;
+  font-weight: bolder;
+  width: 75%;
+}
+
+div.title-content p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 110%;
+}
+
+#ruiJob {
+  margin: 0;
+  color: #0FABF1;
+  position: relative;
+}

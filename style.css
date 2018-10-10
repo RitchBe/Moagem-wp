@@ -1,0 +1,19 @@
+/*
+  Theme Name: Moagem
+  Author: Richard Houet
+  Version: 1.0
+*/
+
+@font-face {
+  font-family: 'Cocosignummaiuscoletto';
+  src: url('cocosignummaiuscoletto-bold.otf');
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+  font-family: 'Cocosignummaiuscoletto';
+}
+

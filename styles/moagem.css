@@ -1,0 +1,58 @@
+section#sectionBelief {
+  background-color: #717171;
+  -webkit-justify-content: space-evenly;
+          justify-content: space-evenly;
+}
+
+section#sectionBelief h2 {
+  color: #c7bba4;
+}
+
+section#sectionBelief p {
+  color: #F9F9F2;
+  font-size: 110%;
+}
+
+section#sectionBelief p strong {
+  color: #c7bba4;
+}
+
+section#sectionBelief p.belief-p-finished strong {
+  color: #6ee981 !important;
+  -webkit-transition: 1s ease;
+     -moz-transition: 1s ease;
+      -ms-transition: 1s ease;
+       -o-transition: 1s ease;
+          transition: 1s ease;
+      -webkit-transition-delay: 3s;
+           -moz-transition-delay: 3s;
+            -ms-transition-delay: 3s;
+             -o-transition-delay: 3s;
+                transition-delay: 3s;
+}
+
+
+
+
+section#sectionBelief .belief-content {
+  width: 40vw;
+}
+
+#svgBelief {
+  width: 30vw;
+}
+
+
+.belief-title-finished {
+  color: #6ee981 !important;
+  -webkit-transition: 1s ease;
+     -moz-transition: 1s ease;
+      -ms-transition: 1s ease;
+       -o-transition: 1s ease;
+          transition: 1s ease;
+    -webkit-transition-delay: 3s;
+       -moz-transition-delay: 3s;
+        -ms-transition-delay: 3s;
+         -o-transition-delay: 3s;
+            transition-delay: 3s;
+}
