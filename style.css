@@ -9,11 +9,13 @@
   src: url('cocosignummaiuscoletto-bold.otf');
 }
 
+
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 
 h2 {
   font-family: 'Cocosignummaiuscoletto';
 }
+
 

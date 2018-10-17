@@ -1,6 +1,6 @@
 
 <?php get_header(); ?>
-
+<script src="https://unpkg.com/scrollreveal"></script>
 <?php while (have_posts()) {
   the_post();
 }
@@ -21,28 +21,65 @@
 ?>
 
 
-<section id="sectionBanner" class="banner">
-  <h2>this is the banner</h2>
+<section id="sectionBanner" class="banner" style="background-image: url(<?php echo get_theme_file_uri('images/moagem/inside.jpg') ?>)">
+  <div class="gradient"></div>
+  <div class="banner-moagem-content">
+    <div class="banner-moagem-logo">
+  <object style="position:relative;" id="svgBannerLogo" type="image/svg+xml" data="<?php echo get_theme_file_uri('images/logos/banner-moagem-logo-2.svg') ?>"></object>
+</div>
+  <div class="banner-p">
+  <p>What used to be a flour mill for transforming cereals into flour,
+is now a cultural centre for turning creative ideas into productive collaborations.</p>
+<div class="banner-moagem-info">
+  <p>Cultural Centre</p>
+  <p>Vegetarian Bistro</p>
+</div>
+</div>
+</div>
+
 </section>
 
-<section id="sectionMission">
-  <h2>this is the mission section</h2>
+<section id="sectionMission" class="section-moagem">
+
+  <div class="mission-content">
+  <h2><?php echo $higherMissionTitle ?></h2>
+  <?php echo $higherMissionContent ?>
+</div>
+
+  <div class="mission-picture">
+    <div class="pic pic-tall" style="background-image: url(<?php echo get_theme_file_uri('images/moagem/moaempic6.jpg') ?>)"></div>
+    <div class="pic pic-large-1" style="background-image: url(<?php echo get_theme_file_uri('images/moagem/large1.jpg') ?>)"></div>
+    <div class="pic pic-large-2" style="background-image: url(<?php echo get_theme_file_uri('images/moagem/inside2.jpg') ?>)"></div>
+  </div>
 </section>
 
-<section id="sectionBelief">
-  <div class="belief-content">
+
+
+
+<section id="sectionBelief" class="section-moagem">
+  <div class="belief-content section-moagem-content">
     <h2 id="beliefTitle"><?php echo $beliefTitle ?></h2>
     <p><?php echo $beliefContent ?></p>
   </div>
 
-  <div class="belief-logo">
-    <object style="position:relative;" id="svgBelief" type="image/svg+xml" data="<?php echo get_theme_file_uri('images/logoBelief.svg') ?>"></object>
+  <div class="belief-logo section-moagem-logo">
+    <object style="position:relative;" id="svgBelief" type="image/svg+xml" data="<?php echo get_theme_file_uri('images/logos/logoBelief.svg') ?>"></object>
   </div>
 </section>
 
 
-<section id="sectionWho">
-  <h2>this is the who section</h2>
+
+
+<section id="sectionWho" class="section-moagem">
+  <div class="who-logo section-moagem-logo">
+    <object style="position:relative;" id="svgWho" type="image/svg+xml" data="<?php echo get_theme_file_uri('images/logos/logoWho.svg') ?>"></object>
+
+  </div>
+
+  <div class="who-content section-moagem-content">
+    <h2 id="whoTitle"><?php echo $whoTitle ?></h2>
+    <p><?php echo $whoContent ?></p>
+  </div>
 </section>
 
 <section id="sectionPeople">
@@ -52,7 +89,13 @@
 
 <script>
 
+  ScrollReveal().reveal('.pic-tall', {delay: 700, duration: 1000, origin: 'left', distance: '150px'});
+  ScrollReveal().reveal('.pic-large-1', {delay: 700, duration: 1000, origin: 'right', distance: '150px'});
+  ScrollReveal().reveal('.pic-large-2', {delay: 700, duration: 1000, origin: 'right', distance: '150px'});
 
+
+
+//BELIEF ANIM
   const svgBeliefAnim =  new Vivus('svgBelief', {type: 'delayed', duration: 200},
     function() {
         const svgBelief = document.getElementById('svgBelief');
@@ -75,6 +118,33 @@
         $('#beliefTitle').addClass("belief-title-finished");
         $(".belief-content").find("p").each(function() {
           $(this).addClass("belief-p-finished");
+        });
+      }
+    );
+
+//WHO ANIM
+    const svgWhoAnim =  new Vivus('svgWho', {type: 'delayed', duration: 300},
+    function() {
+        const svgWho = document.getElementById('svgWho');
+        const svgWhoContent = svgWho.contentDocument;
+
+        const outterCircleWho = svgWhoContent.getElementById('outterCircleWho');
+        const innerCircleWho = svgWhoContent.getElementById('innerCircleWho');
+        const whoPathElements = svgWhoContent.querySelectorAll('path');
+
+
+
+        whoPathElements.forEach(function(path) {
+          path.classList.add('finished', 'nostroke');
+
+        });
+
+        innerCircleWho.classList.add('innerCircleWhoFill');
+        outterCircleWho.classList.add('outterCircleWhoFill');
+
+        $('#whoTitle').addClass("who-title-finished");
+        $(".who-content").find("p").each(function() {
+          $(this).addClass("who-p-finished");
         });
       }
     );

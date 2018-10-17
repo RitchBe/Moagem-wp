@@ -1,0 +1,24 @@
+#contactSection {
+  -webkit-justify-content: space-around;
+          justify-content: space-around;
+  background-color: #717171;
+  color: #f9f9f2;
+}
+
+.contact-content h5 {
+  margin: 0;
+  color: #c7bba4;
+}
+
+.contact-content p {
+  margin: 0;
+}
+
+.contact-content p a {
+  color: #6ee981;
+}
+
+.contact-content p strong {
+  color: #C7BBA4;
+
+}

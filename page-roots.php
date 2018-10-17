@@ -24,8 +24,10 @@
 
 <section id="sectionRoots1" class="scrollsections">
   <div class="section-roots-container section-pair">
-
-    <div class="section-pictures"></div>
+    <div class="section-pictures">
+        <div class="row1" style="background-image: url(<?php echo get_theme_file_uri('images/images-roots/moagem2.jpg') ?>)"></div>
+        <div class="row2" style="background-image: url(<?php echo get_theme_file_uri('images/images-roots/moagem4.jpg') ?>)"> </div>
+    </div>
     <div class="title">
       <h2 class="roots-title">The Aljezur Flour Mill</h2>
       <div class="title-content"><?php echo $rootsPart1 ?></div>
@@ -37,7 +39,10 @@
 <section id="sectionRoots2" class="scrollsections">
       <div class="section-roots-container ">
 
-    <div class="section-pictures"></div>
+    <div class="section-pictures">
+        <div class="row1" style="background-image: url(<?php echo get_theme_file_uri('images/images-roots/roots2.jpg') ?>)"></div>
+        <div class="row2" style="background-image: url(<?php echo get_theme_file_uri('images/images-roots/roots3.jpg') ?>)"> </div>
+    </div>
     <div class="title">
       <div class="title-content"><?php echo $rootsPart2 ?></div>
       </div>
@@ -49,7 +54,9 @@
 <section id="sectionRoots3" class="scrollsections">
       <div class="section-roots-container section-pair">
 
-    <div class="section-pictures"></div>
+    <div class="section-pictures">
+      <div class="fullrow" style="background-image: url(<?php echo get_theme_file_uri('images/images-roots/flourmill.jpg') ?>);background-position: bottom"></div>
+    </div>
     <div class="title">
       <div class="title-content"><?php echo $rootsPart3 ?></div>
       </div>
@@ -60,11 +67,19 @@
 <section id="sectionRoots4" class="scrollsections">
       <div class="section-roots-container">
 
-    <div class="section-pictures"></div>
+    <div class="section-pictures">
+         <div class="row1" style="background-image: url(<?php echo get_theme_file_uri('images/images-roots/moagem.jpg') ?>);"></div>
+
+         <div class="rowmuliple">
+           <div class="multiple1" style="background-image: url(<?php echo get_theme_file_uri('images/images-roots/small.png') ?>)"></div>
+           <div class="multiple1" style="background-image: url(<?php echo get_theme_file_uri('images/images-roots/small3.png') ?>)"></div>
+
+         </div>
+       </div>
     <div class="title">
       <div class="title-content">
         <?php echo $rootsPart4 ?></div>
-      <object style="position:relative;" id="svgRui" type="image/svg+xml" data="<?php echo get_theme_file_uri('images/ruipaths.svg') ?>"></object>
+      <object style="position:relative;" id="svgRui" type="image/svg+xml" data="<?php echo get_theme_file_uri('images/images-roots/ruipaths.svg') ?>"></object>
         <p id="ruiJob"><i> Portuguese Association of Industrial Archaeology</i></p>
   </div>
 

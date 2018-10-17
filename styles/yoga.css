@@ -1,6 +1,20 @@
 
 .col-title {
   margin: 0 0 5px 0 !important;
-  background: pink;
+  background: #717171;
+  color:  #f9f9f2;
 }
 
+.timetable-container {
+  width: 60vw;
+  margin-top: 45px;
+}
+
+.sy-button, .sy-thedate {
+  display: none !important;
+}
+
+#yogaSection {
+  background-color: #f9f9f2;
+  color: #f9f9f2;
+}

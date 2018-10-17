@@ -1,0 +1,37 @@
+<?xml version="1.0" standalone="no"?><!-- Generator: Gravit.io --><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="isolation:isolate" viewBox="0 0 285.875 142.75" width="285.875" height="142.75"><defs><clipPath id="_clipPath_UmneQqs3M4dAUZWSLtOWNQ5xJbtCd0m8"><rect width="285.875" height="142.75"/></clipPath></defs><g clip-path="url(#_clipPath_UmneQqs3M4dAUZWSLtOWNQ5xJbtCd0m8)">
+
+<style>
+  path {
+    stroke: #717171;
+    fill: #717171;
+    fill-opacity: 0;
+    stroke-width: 1px;
+  }
+
+    .finished {
+  fill-opacity: 1;
+  transition: 0.5s ease-out;
+  stroke-width: 0
+  }
+
+    .innerCircleWhoFill {
+    stroke: none !important;
+    fill: #f9f9f2;
+  }
+
+    .outterCircleWhoFill {
+  fill-opacity: 1 !important;
+  transition: 2s ease;
+  transition-delay: 0.5s;
+  stroke: none !important;
+}
+
+
+</style>
+<path d=" M 0 141.25 L 0 136.75 L 95.063 136.75 L 95.063 25.813 L 119.375 1.5 L 155.688 37.813 L 141.5 52 L 127.438 37.938 L 135.375 30 L 138.125 32.75 L 133.375 37.5 L 141.75 45.875 L 149.625 38 L 119.188 7.563 L 99.25 27.5 L 99.25 141.125 L 0 141.25 Z "/>
+
+<path d=" M 285.875 141 L 285.875 136.813 L 191 136.813 L 191 95.25 L 191 25.75 L 166.75 1.5 L 147.5 20.75 L 150.438 23.688 L 166.563 7.563 L 186.688 27.688 L 186.688 141.25 L 285.875 141 Z "/>
+
+<ellipse style="stroke:none;fill:#0fabf1;fill-opacity:0;" id="outterCircleWho" vector-effect="non-scaling-stroke" cx="142.75" cy="91.09375" rx="19.655951433121054" ry="19.71875"/>
+
+<circle style="stroke:none !important; fill:#f9f9f2;" id="innerCircleWho" vector-effect="non-scaling-stroke" cx="142.75" cy="91.09375" r="2.392578125" /></g></svg>

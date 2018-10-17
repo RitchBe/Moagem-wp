@@ -1,44 +1,60 @@
 .topnav {
-    background-color: white;
-    -webkit-box-shadow: 0px 0px 5px lightgray;
-            box-shadow: 0px 0px 5px lightgray;
+    background-color: rgba(0,,0,0,0);
     overflow: hidden;
     z-index: 5;
     display: flex;
     height: 75px;
-    -webkit-justify-content: space-between;
-            justify-content: space-between;
+    -webkit-justify-content: flex-start;
+            justify-content: flex-start;
     -webkit-align-items: center;
             align-items: center;
     padding-left: 20px;
     padding-right: 20px;
     position: fixed;
     width: 100vw;
-    top: 0;
+    -webkit-transition: 1s;
+       -moz-transition: 1s;
+        -ms-transition: 1s;
+         -o-transition: 1s;
+            transition: 1s;
 }
 
+
+
+.solid {
+  background-color: #717171;
+  -webkit-transition: 1s;
+     -moz-transition: 1s;
+      -ms-transition: 1s;
+       -o-transition: 1s;
+          transition: 1s;
+}
+
+.Staysolid {
+  background-color: #717171;
+
+}
 .nav-links {
   padding-right: 50px;
 }
 
 /* Style the links inside the navigation bar */
 .topnav a {
-    color: #0FABF1;
+    color: #f9f9f2;
     text-align: center;
-    padding: 14px 16px;
+    padding: 4px 9px;
     text-decoration: none;
     font-size: 17px;
 }
 
 /* Change the color of links on hover */
-.topnav a:hover {
+/*.topnav a:hover {
     color: #e6d5b5;
     border-bottom: 1px solid #e6d5b5;
-}
+}*/
 
 /* Add an active class to highlight the current page */
 .active {
-    background-color: #0FABF1;
     color: white !important;
 }
 
@@ -69,3 +85,50 @@
     text-align: left;
   }
 }
+
+.logomoagem {
+  width: 110px;
+}
+
+
+#BistroLogoNav {
+  width: 130px;
+  padding-bottom: 3px;
+}
+
+.active #BistroLogoNav.fill path {
+  fill: #6ee981 !important;
+  -webkit-transition: 1.3s;
+     -moz-transition: 1.3s;
+      -ms-transition: 1.3s;
+       -o-transition: 1.3s;
+          transition: 1.3s;
+}
+#svgEvent {
+  width: 85px;
+  padding-top: 2px;
+}
+
+#svgRoots, #svgYoga {
+  width: 68px;
+  padding-top: 2px;
+}
+
+#contactSvg {
+  width: 108px;
+  padding-top: 2px;
+}
+
+a.active .svgNav path, a.active .svgNav text{
+  fill: #c7bba4 !important;
+}
+
+.svgNav:hover path, .svgNav:hover text {
+  fill: #c7bba4 !important;
+  -webkit-transition: 0.2s;
+     -moz-transition: 0.2s;
+      -ms-transition: 0.2s;
+       -o-transition: 0.2s;
+          transition: 0.2s;
+}
+

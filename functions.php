@@ -15,6 +15,12 @@ add_action( 'wp_head', 'twentyfifteen_javascript_detection', 0 );
     wp_enqueue_style('Roots_style', get_theme_file_uri('styles/roots.css'));
     wp_enqueue_style('Header_style', get_theme_file_uri('styles/header.css'));
     wp_enqueue_style('Moagem_style', get_theme_file_uri('styles/moagem.css'));
+    wp_enqueue_style('Bistro_style', get_theme_file_uri('styles/bistro.css'));
+    wp_enqueue_style('Contact_style', get_theme_file_uri('styles/contact.css'));
+    wp_enqueue_style('Footer_style', get_theme_file_uri('styles/footer.css'));
+
+
+
     wp_enqueue_style("font-awesome", "//use.fontawesome.com/releases/v5.3.1/css/all.css");
 
 

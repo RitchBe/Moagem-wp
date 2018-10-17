@@ -1,12 +1,11 @@
 <?php get_header(); ?>
 
-<?php while(have_posts()) {
-  the_post();
 
-the_content();
-} ?>
+<h2>space</h2>
+<h2>space</h2>
+<h2>space</h2>
+<h2>space</h2>
 
-
-<h2>pp</h2>
+<?php //wp_nav_menu(14); ?>
 
 <?php get_footer(); ?>
