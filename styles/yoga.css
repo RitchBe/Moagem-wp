@@ -2,7 +2,7 @@
 .col-title {
   margin: 0 0 5px 0 !important;
   background: #717171;
-  color:  #f9f9f2;
+  /*color:  #f9f9f2;*/
 }
 
 .timetable-container {
@@ -17,4 +17,24 @@
 #yogaSection {
   background-color: #f9f9f2;
   color: #f9f9f2;
+  -webkit-justify-content: center;
+          justify-content: center;
+}
+
+.price {
+  color: #717171;
+  width: 20vw;
+}
+
+.sy-description-container {
+  color: pink !important;
+}
+
+.sy-infofields-container* {
+  color: black !important;
+}
+
+.creneau {
+
+  min-height: 20px;
 }

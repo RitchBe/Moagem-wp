@@ -7,17 +7,17 @@
   the_post();
 }
 // Moagem ENG content
- $higherMissionTitle = get_the_title(17);
- $higherMissionContent = get_post_field('post_content', 17);
+ $higherMissionTitle = get_the_title(71);
+ $higherMissionContent = get_post_field('post_content', 71);
 
- $beliefTitle = get_the_title(21);
- $beliefContent = get_post_field('post_content', 21);
+ $beliefTitle = get_the_title(73);
+ $beliefContent = get_post_field('post_content', 73);
 
- $whoTitle = get_the_title(23);
- $whoContent = get_post_field('post_content', 23);
+ $whoTitle = get_the_title(75);
+ $whoContent = get_post_field('post_content', 75);
 
- $peopleTitle = get_the_title(25);
- $peopleContent = get_post_field('post_content', 25);
+ $peopleTitle = get_the_title(78);
+ $peopleContent = get_post_field('post_content', 78);
 
 ?>
 
@@ -31,7 +31,6 @@
 
           });
         });
-
 </script>
 
 

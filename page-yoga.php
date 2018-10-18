@@ -1,6 +1,8 @@
 
 <?php get_header(); ?>
 
+<?php $yogaPrice = get_post_field('post_content', 136); ?>
+
 <section id="yogaSection">
 
 <script src='<?php echo get_theme_file_uri( "js/tooltipster.bundle.min.js" ); ?>'></script>
@@ -9,6 +11,10 @@
 
 the_content();
 } ?>
+
+<div class="price">
+  <?php echo $yogaPrice ?>
+</div>
 </section>
 
 

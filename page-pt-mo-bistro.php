@@ -1,14 +1,14 @@
 <?php get_header(); ?>
 <?php
-$bistroContent1 = get_post_field('post_content', 95);
-$bistroList = get_post_field('post_content', 97);
-$bistroListTitle = get_the_title(97);
-$bistroContent3 = get_post_field('post_content', 99);
-$bistroContent4 = get_post_field('post_content', 101);
-$bistroContent5 = get_post_field('post_content', 104);
-$bistroContent6 = get_post_field('post_content', 106);
-$bistroCafe = get_post_field('post_content', 108);
-$bistroCafetTitle = get_the_title(108);
+$bistroContent1 = get_post_field('post_content', 165);
+$bistroList = get_post_field('post_content', 167);
+$bistroListTitle = get_the_title(167);
+$bistroContent3 = get_post_field('post_content', 169);
+$bistroContent4 = get_post_field('post_content', 171);
+$bistroContent5 = get_post_field('post_content', 174);
+$bistroContent6 = get_post_field('post_content', 176);
+$bistroCafe = get_post_field('post_content', 178);
+$bistroCafetTitle = get_the_title(178);
 $bistroReviewsTitle = get_the_title(126);
 $bistroReviews = get_post_field('post_content', 126);
 ?>
@@ -18,17 +18,16 @@ $bistroReviews = get_post_field('post_content', 126);
 <script src="<?php echo get_theme_file_uri('js/jquery.scrollify.js') ?>"></script>
 <script>
 $(function() {
- $.scrollify({
-    section: ".scrollTest , .footer-bottom , #top",
+  $.scrollify({
+    section: ".scrollTest , .footer-bottom",
     setHeights: false,
     scrollSpeed: 1000,
     offset: -120,
     interstitialSection: ".logotest",
   });
 });
-
 </script>
-<div class="logotest" style="position: absolute;top: 0" id="top"></div>
+<div class="logotest" style="position: absolute;top: 0"></div>
 <section id="sectionBistro">
   <div class="bistro-picture" style="margin-bottom: 10px;">
 
@@ -62,8 +61,8 @@ $(function() {
 
 
     <div class="bistro-pic bistro-pic-tall-3 content-dark content-flex pic-tall-right">
-      <div class="content-new">
-        <h3><?php echo $bistroListTitle ?></h3>
+      <div class="content-new list-pt">
+        <h3 style="margin:0 !important"><?php echo $bistroListTitle ?></h3>
         <?php echo $bistroList ?>
       </div>
     </div>
@@ -164,9 +163,8 @@ $(function() {
       </div>
 
 
-  </div>
-    <a href="#top" id="toTheTop"><i class="fas fa-arrow-up"></i></a>
 
+  </div>
 </section>
 <script>
 ScrollReveal().reveal('.mo-bistro-logo', {
@@ -260,35 +258,6 @@ $(document).ready(function() {
   $('.lSNext')[0].innerHTML = '<i class="fas fa-arrow-right"></i>'
   $('.lSPrev')[0].innerHTML = '<i class="fas fa-arrow-left"></i>'
 });
-
-
-  $(document).ready(function() {
-  //Add smoooth scolling to all link in navbar + footer link
-  $("#toTheTop").on('click', function(event) {
-
-    if (this.hash !== "") {
-      event.preventDefault();
-      var hash = this.hash;
-
-      //jquery animate() method to add smooth scrollwheel
-      // number 900 spec number of milliseconids it takes to scoll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 900, function(){
-        window.location.hash = hash;
-      });
-      }
-    });
-    $(window).scroll(function() {
-      $(".slideanim").each(function(){
-        var pos = $(this).offset().top;
-
-        var winTop = $(window).scrollTop();
-        if (pos < winTop + 600) {
-          $(this).addClass("slide");
-        }
-      });
-    });
-  })
 </script>
 <?php get_footer(); ?>
+

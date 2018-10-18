@@ -164,6 +164,11 @@ div.pic-large-1, div.pic-large-2 {
           background-size: cover;
 }
 
+div.mission-content {
+  padding-top: 50px;
+
+}
+
 
 /*SECTION BELIEF--------------------------------------*/
 
@@ -255,4 +260,11 @@ section#sectionBelief p.belief-p-finished strong {
         -ms-transition-delay: 1.5s;
          -o-transition-delay: 1.5s;
             transition-delay: 1.5s;
+}
+
+
+/*SECTION PEOPLE-----------------------------------*/
+
+.sectionPeople{
+  height: 100vh;
 }
