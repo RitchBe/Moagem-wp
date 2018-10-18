@@ -4,7 +4,7 @@
   padding-top: 90px;
   background-color: #c7bba4;
   flex-direction: column;
-  height: 900vh
+  height: auto;
 }
 
 .bistro-pic {
@@ -15,7 +15,7 @@
 .bistro-picture {
   display: grid;
   grid-template-columns: 30vw 30vw;
-  grid-template-rows: 40vh 40vh 40vh 40vh 40vh 40vh 40vh 40vh 40vh 40vh 10vh 40vh 40vh 40vh 40vh 30vw 40vh 40vh 40vh 40vh;
+  grid-template-rows: 40vh 40vh 40vh 40vh 40vh 40vh 40vh 40vh 40vh 40vh 40vh 40vh 40vh 40vh 30vw 40vh 40vh 40vh 40vh;
   /*                    1   2   3    4     5    6*   7    8    9*/
   grid-gap: 10px;
 }
@@ -53,26 +53,26 @@
 
 .bistro-pic-xl-2 {
   grid-column: 1 / 3;
-  grid-row: 9/12;
+  grid-row: 9/11;
 }
 
 div.bistro-pic-tall-4, div.bistro-pic-tall-5 {
-  grid-row: 12/14;
+  grid-row: 11/13;
 }
 
 .bistro-pic-xl-3 {
   grid-column: 1 / 3;
-  grid-row: 14 /16;
+  grid-row: 13 /15;
 }
 
 .bistro-pic-xl-4 {
   grid-column: 1 / 3;
-  grid-row: 17 / 19;
+  grid-row: 16 / 18;
 }
 
 .bistro-pic-xl-5 {
   grid-column: 1 / 3;
-  grid-row: 19 / 21;
+  grid-row: 18 / 20;
 }
 
 
@@ -102,7 +102,7 @@ div.bistro-pic-tall-4, div.bistro-pic-tall-5 {
 .content {
   width: 320px;
   background: #f9f9f2;
-  padding: 15px;
+  padding: 30px;
   font-size: 110%;
 }
 
@@ -124,8 +124,8 @@ div.bistro-pic-tall-4, div.bistro-pic-tall-5 {
 
 .bistro-pic-content-1 {
   display: flex;
-  -webkit-justify-content: end;
-          justify-content: end;
+  -webkit-justify-content: flex-end;
+          justify-content: flex-end;
       -webkit-align-items: center;
               align-items: center;
         z-index: 3;
@@ -136,7 +136,7 @@ div.list {
   color: #f9f9f2;
   background-color: #727272;
   width: 320px;
-  padding: 15px;
+  padding: 30px;
   position: absolute;
   -webkit-transform: translate(-180px, 0);
      -moz-transform: translate(-180px, 0);
@@ -152,8 +152,8 @@ div.list h3 {
 
 div.bistro-list {
   display: flex;
-  -webkit-justify-content: start;
-          justify-content: start;
+  -webkit-justify-content: flex-start;
+          justify-content: flex-start;
       -webkit-align-items: center;
               align-items: center;
   position: relative;
@@ -162,3 +162,32 @@ div.bistro-list {
 }
 
 
+
+.lSPrev, .lSNext {
+  color: #c7bba4 !important;
+  font-size: 25px;
+  position: initial;
+}
+
+.lSAction {
+  display: flex;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+}
+
+
+
+#reviewsList {
+  height: 200px !important;
+
+}
+
+#reviewsList li p {
+  font-weight: bold;
+}
+
+#reviewsList li {
+  display: flex;
+  -webkit-justify-content: center;
+          justify-content: center;
+}

@@ -102,3 +102,21 @@ div.title-content p {
           background-size: cover;
   background-position: bottom;
 }
+
+#scrollsections-navigation {
+  position: fixed;
+  right: 20px;
+  top: 40vh;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+#scrollsections-navigation a {
+    color: #c7bba4;
+}
+
+.active-scrollsection {
+  color: #f9f9f2 !important;
+}

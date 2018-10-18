@@ -1,6 +1,8 @@
 
 <?php get_header(); ?>
 <script src="https://unpkg.com/scrollreveal"></script>
+<script src="<?php echo get_theme_file_uri('js/mousewheel.min.js') ?>"></script>
+<script src="<?php echo get_theme_file_uri('js/jquery.scrollify.js') ?>"></script>
 <?php while (have_posts()) {
   the_post();
 }
@@ -17,11 +19,22 @@
  $peopleTitle = get_the_title(25);
  $peopleContent = get_post_field('post_content', 25);
 
-
 ?>
 
+<script>
+    $(function() {
+        $.scrollify({
+            section : ".scrollTest",
+            setHeights: false,
+            scrollSpeed: 1500,
+            interstitialSection : " .termslink",
 
-<section id="sectionBanner" class="banner" style="background-image: url(<?php echo get_theme_file_uri('images/moagem/inside.jpg') ?>)">
+          });
+        });
+</script>
+
+
+<section id="sectionBanner" class="banner scrollTest" style="background-image: url(<?php echo get_theme_file_uri('images/moagem/inside.jpg') ?>)">
   <div class="gradient"></div>
   <div class="banner-moagem-content">
     <div class="banner-moagem-logo">
@@ -39,7 +52,7 @@ is now a cultural centre for turning creative ideas into productive collaboratio
 
 </section>
 
-<section id="sectionMission" class="section-moagem">
+<section id="sectionMission" class="section-moagem scrollTest">
 
   <div class="mission-content">
   <h2><?php echo $higherMissionTitle ?></h2>
@@ -56,7 +69,7 @@ is now a cultural centre for turning creative ideas into productive collaboratio
 
 
 
-<section id="sectionBelief" class="section-moagem">
+<section id="sectionBelief" class="section-moagem scrollTest">
   <div class="belief-content section-moagem-content">
     <h2 id="beliefTitle"><?php echo $beliefTitle ?></h2>
     <p><?php echo $beliefContent ?></p>
@@ -70,7 +83,7 @@ is now a cultural centre for turning creative ideas into productive collaboratio
 
 
 
-<section id="sectionWho" class="section-moagem">
+<section id="sectionWho" class="section-moagem scrollTest">
   <div class="who-logo section-moagem-logo">
     <object style="position:relative;" id="svgWho" type="image/svg+xml" data="<?php echo get_theme_file_uri('images/logos/logoWho.svg') ?>"></object>
 
@@ -82,21 +95,27 @@ is now a cultural centre for turning creative ideas into productive collaboratio
   </div>
 </section>
 
-<section id="sectionPeople">
+<section id="sectionPeople" class="scrollTest">
   <h2>this is the people section</h2>
 </section>
 
 
 <script>
 
-  ScrollReveal().reveal('.pic-tall', {delay: 700, duration: 1000, origin: 'left', distance: '150px'});
-  ScrollReveal().reveal('.pic-large-1', {delay: 700, duration: 1000, origin: 'right', distance: '150px'});
-  ScrollReveal().reveal('.pic-large-2', {delay: 700, duration: 1000, origin: 'right', distance: '150px'});
+  ScrollReveal().reveal('.pic-tall', { duration: 1000, origin: 'left', distance: '150px', viewOffset: {
+        bottom: 300,
+    }});
+  ScrollReveal().reveal('.pic-large-1', {duration: 1000, origin: 'right', distance: '150px',    viewOffset: {
+        bottom: 300,
+    }});
+  ScrollReveal().reveal('.pic-large-2', {duration: 1000, origin: 'right', distance: '150px',    viewOffset: {
+        bottom: 150,
+    }});
 
 
 
 //BELIEF ANIM
-  const svgBeliefAnim =  new Vivus('svgBelief', {type: 'delayed', duration: 200},
+  const svgBeliefAnim =  new Vivus('svgBelief', {type: 'delayed', duration: 250},
     function() {
         const svgBelief = document.getElementById('svgBelief');
         const svgBeliefContent = svgBelief.contentDocument;
@@ -123,7 +142,7 @@ is now a cultural centre for turning creative ideas into productive collaboratio
     );
 
 //WHO ANIM
-    const svgWhoAnim =  new Vivus('svgWho', {type: 'delayed', duration: 300},
+    const svgWhoAnim =  new Vivus('svgWho', {type: 'delayed', duration: 200},
     function() {
         const svgWho = document.getElementById('svgWho');
         const svgWhoContent = svgWho.contentDocument;

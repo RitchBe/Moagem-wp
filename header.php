@@ -457,3 +457,10 @@ $(document).ready(function() {
 
 </style>
 
+<script>
+  window.scrollBy({
+  top: 900, // could be negative value
+  left: 0,
+  behavior: 'smooth'
+});
+</script>

@@ -18,6 +18,7 @@ add_action( 'wp_head', 'twentyfifteen_javascript_detection', 0 );
     wp_enqueue_style('Bistro_style', get_theme_file_uri('styles/bistro.css'));
     wp_enqueue_style('Contact_style', get_theme_file_uri('styles/contact.css'));
     wp_enqueue_style('Footer_style', get_theme_file_uri('styles/footer.css'));
+    wp_enqueue_style('LightSlider_style', get_theme_file_uri('styles/lightslider.min.css'));
 
 
 

@@ -21,8 +21,8 @@
 
     .outterCircleWhoFill {
   fill-opacity: 1 !important;
-  transition: 2s ease;
-  transition-delay: 0.5s;
+  transition: 1s ease;
+  transition-delay: 1s;
   stroke: none !important;
 }
 

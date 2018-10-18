@@ -109,11 +109,15 @@
   padding-top: 2px;
 }
 
-#svgRoots, #svgYoga {
+#svgYoga {
   width: 68px;
   padding-top: 2px;
 }
 
+#svgRoots {
+  width: 72px;
+  padding-top: 2px;
+}
 #contactSvg {
   width: 108px;
   padding-top: 2px;

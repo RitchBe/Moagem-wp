@@ -97,8 +97,10 @@
     $('section.scrollsections')
       .scrollSections({
         alwaysStartWithFirstSection : true, // force to load the page on the first section (prevent broswer caching)
-        navigation: false,
+        navigation: true,
+        createNavigation: true,
         scrollbar: true,
+        animateScrollToFirstSection: false,
 
         before: function($currentSection, $nextSection){
 
@@ -123,6 +125,8 @@
 
       }
       $('.title', $section).fadeIn(500); // Fade in current section title
+
+
       $('.section-roots-container', $section).slideDown('slow');
       $('#ruiJob').css("display", "block");
       $("#ruiJob").css("opacity", "0");
@@ -151,7 +155,7 @@
 </script>
 
 <script>
-      const ruiSignatur =  new Vivus('svgRui', {type: 'oneByOne', duration: 700, animTimingFunction: Vivus.EASE});
+      const ruiSignatur =  new Vivus('svgRui', {type: 'oneByOne', duration: 500, animTimingFunction: Vivus.EASE});
       $("#ruiJob").css("opacity", "0");
 
   window.onscroll = function(ev) {
@@ -168,7 +172,16 @@
     }
 };
 
+  $(document).ready(function() {
+
+$('#scrollsections-menuitem-0')[0].innerHTML = 'Part 1'
+$('#scrollsections-menuitem-1')[0].innerHTML = 'Part 2'
+$('#scrollsections-menuitem-2')[0].innerHTML = 'Part 3'
+$('#scrollsections-menuitem-3')[0].innerHTML = 'Part 4'
+
+});
 </script>
 </div>
 
-<?php get_footer(); ?>
+  <?php wp_footer(); ?>
+

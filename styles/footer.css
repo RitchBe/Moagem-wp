@@ -1,1 +1,35 @@
-footer.css
+div.footer {
+  background-color: #c7bba4;
+  height: 120px;
+  display: flex;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer-icon {
+  font-size: 40px;
+  color: #717171;
+}
+
+
+.fa-facebook-square {
+  margin-right: 10px;
+}
+
+.termslink {
+  color: #717171;
+}
+
+.termslink:hover, .footer-icon:hover {
+  color: #f9f9f2;
+  -webkit-transition: 0.3s;
+     -moz-transition: 0.3s;
+      -ms-transition: 0.3s;
+       -o-transition: 0.3s;
+          transition: 0.3s;
+}
