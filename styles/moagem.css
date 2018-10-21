@@ -15,6 +15,10 @@
 
 }
 
+dd {
+  position: absolute;
+  top: -75px;
+}
 
 
 
@@ -90,7 +94,8 @@ div.banner-p p {
 }
 
 #svgBannerLogo {
-  width: 900px;
+  width: 50vw;
+  height: 15vh;
 }
 
 .banner-moagem-logo{
@@ -117,6 +122,7 @@ div.banner-p p {
          -ms-flex-direction: column;
              flex-direction: column;
      height: 145vh;
+     overflow: hidden;
 
 
 }
@@ -144,7 +150,7 @@ img.img-mission {
 
 div.mission-picture {
   display: grid;
-  grid-template-columns: 28vw 30vw;
+  grid-template-columns: 30vw 30vw;
   grid-template-rows: 40vh 40vh;
   grid-gap: 10px;
 }
@@ -268,3 +274,170 @@ section#sectionBelief p.belief-p-finished strong {
 .sectionPeople{
   height: 100vh;
 }
+
+
+
+
+/*MEDIA QUERIE ------------------------------------------*/
+
+@media screen and (min-width: 320px) and (max-width: 750px) {
+
+
+  /*BANNER-------------------*/
+
+  #svgBannerLogo {
+  width: 90vw;
+  height: 6vh;
+}
+  #sectionBanner {
+    height: 100vh;
+  }
+
+  div.banner-moagem-content {
+    -webkit-justify-content: center;
+            justify-content: center;
+      -webkit-align-items: center;
+              align-items: center;
+  }
+
+  .banner-moagem-content, .banner-moagem-content div.banner-moagem-logo {
+    width: 96vw;
+  }
+
+  .banner-moagem-content div.banner-p  {
+    font-size: 90%;
+    width: 90vw;
+    display: flex;
+    -webkit-justify-content: center;
+            justify-content: center;
+    -webkit-align-items: center;
+            align-items: center;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .banner-moagem-content div.banner-moagem-info {
+    width: 70vw;
+  }
+
+/*MISSION--------------------------*/
+  section#sectionMission {
+    height: 260vh;
+  }
+
+  div.mission-content {
+    display: flex;
+    -webkit-justify-content: center;
+            justify-content: center;
+        -webkit-align-items: center;
+                align-items: center;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+  }
+
+  #sectionMission p{
+    width: 90vw;
+  }
+
+  div.mission-picture {
+    grid-template-columns: 90vw;
+    grid-template-rows: 30vh 30vh 45vh 45vh;
+  }
+
+
+  /*BELIEF-------------------------*/
+
+  section#sectionBelief {
+    height: 188vh;
+    -webkit-flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+
+  }
+
+  .section-moagem-content {
+    width: 90vw;
+  }
+
+  object#svgBelief {
+    width: 80vw;
+  }
+
+
+  /*WHO------------------------------------*/
+
+  #sectionWho {
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+      height: 188vh;
+  }
+
+  #svgWho {
+    width: 90vw;
+  }
+}
+
+
+@media screen and (min-width: 450px) and (max-width: 750px) {
+  div.mission-picture {
+    grid-template-columns: 90vw;
+    grid-template-rows: 40vh 40vh 55vh 55vh;
+  }
+
+  object#svgBelief {
+    width: 70vw;
+  }
+}
+
+@media screen and (min-width: 530px) and (max-width: 750px) {
+  div.banner-moagem-content div.banner-p {
+    font-size: 100%;
+  }
+  section#sectionMission {
+    height: 275vh;
+  }
+}
+
+@media screen and (min-width: 750px) and (max-width: 1050px) {
+  .banner-moagem-content div {
+    width: 60vw;
+    font-size: 105%;
+  }
+    #svgBannerLogo {
+  width: 90vw;
+  height: 6vh;
+}
+  section#sectionMission {
+    overflow: hidden;
+    }
+
+}
+
+@media screen and (min-width: 620px) and (max-width: 750px) {
+    object#svgBelief {
+      width: 50vw;
+    }
+}
+
+@media screen and (min-width: 750px) and (max-width: 1100px) {
+  .section-moagem p {
+    font-size:100%;
+  }
+
+  .section-moagem-content {
+    width: 55vw;
+  }
+
+  div.mission-picture {
+        grid-template-columns: 80vw;
+    grid-template-rows: 40vh 40vh 55vh 55vh;
+  }
+
+  section#sectionMission {
+    height: 260vh;
+  }
+}
+

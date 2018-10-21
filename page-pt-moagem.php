@@ -1,5 +1,5 @@
 
-<?php get_header(); ?>
+<?php get_header('pt'); ?>
 <script src="https://unpkg.com/scrollreveal"></script>
 <script src="<?php echo get_theme_file_uri('js/mousewheel.min.js') ?>"></script>
 <script src="<?php echo get_theme_file_uri('js/jquery.scrollify.js') ?>"></script>
@@ -41,11 +41,11 @@
   <object style="position:relative;" id="svgBannerLogo" type="image/svg+xml" data="<?php echo get_theme_file_uri('images/logos/banner-moagem-logo-2.svg') ?>"></object>
 </div>
   <div class="banner-p">
-  <p>What used to be a flour mill for transforming cereals into flour,
-is now a cultural centre for turning creative ideas into productive collaborations.</p>
+  <p>Onde antes se transformavam cereais em farinha,
+hoje transformam-se ideias criativas em produções colaborativas</p>
 <div class="banner-moagem-info">
-  <p>Cultural Centre</p>
-  <p>Vegetarian Bistro</p>
+  <p>Espaço Cultural</p>
+  <p>Bistro Vegetariano</p>
 </div>
 </div>
 </div>
@@ -142,7 +142,7 @@ is now a cultural centre for turning creative ideas into productive collaboratio
     );
 
 //WHO ANIM
-    const svgWhoAnim =  new Vivus('svgWho', {type: 'delayed', duration: 200},
+    const svgWhoAnim =  new Vivus('svgWho', {type: 'delayed', duration: 250},
     function() {
         const svgWho = document.getElementById('svgWho');
         const svgWhoContent = svgWho.contentDocument;

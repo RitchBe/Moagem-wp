@@ -28,14 +28,17 @@
             setHeights: false,
             scrollSpeed: 1500,
             interstitialSection : "",
-
+            offset: -74,
+            touchScroll: false,
           });
         });
 
 </script>
 
 
-<section id="sectionBanner" class="banner scrollTest" style="background-image: url(<?php echo get_theme_file_uri('images/moagem/inside.jpg') ?>)">
+<!-- this is for the scrollify plugin to go to the right point on banner -->
+<dd class="scrollTest"></dd>
+<section id="sectionBanner" class="banner" style="background-image: url(<?php echo get_theme_file_uri('images/moagem/inside.jpg') ?>)">
   <div class="gradient"></div>
   <div class="banner-moagem-content">
     <div class="banner-moagem-logo">
@@ -109,9 +112,7 @@ is now a cultural centre for turning creative ideas into productive collaboratio
   ScrollReveal().reveal('.pic-large-1', {duration: 1000, origin: 'right', distance: '150px',    viewOffset: {
         bottom: 300,
     }});
-  ScrollReveal().reveal('.pic-large-2', {duration: 1000, origin: 'right', distance: '150px',    viewOffset: {
-        bottom: 150,
-    }});
+  ScrollReveal().reveal('.pic-large-2', {duration: 1000, origin: 'right', distance: '150px'});
 
 
 
@@ -143,7 +144,7 @@ is now a cultural centre for turning creative ideas into productive collaboratio
     );
 
 //WHO ANIM
-    const svgWhoAnim =  new Vivus('svgWho', {type: 'delayed', duration: 200},
+    const svgWhoAnim =  new Vivus('svgWho', {type: 'delayed', duration: 250},
     function() {
         const svgWho = document.getElementById('svgWho');
         const svgWhoContent = svgWho.contentDocument;

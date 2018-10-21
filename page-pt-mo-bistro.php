@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header('pt'); ?>
 <?php
 $bistroContent1 = get_post_field('post_content', 165);
 $bistroList = get_post_field('post_content', 167);

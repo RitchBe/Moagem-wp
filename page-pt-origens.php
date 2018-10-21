@@ -1,6 +1,6 @@
 
 
-<?php get_header(); ?>
+<?php get_header('pt'); ?>
 
 <script src="<?php echo get_theme_file_uri('js/scrollStartStop.js') ?>"></script>
 <script src="<?php echo get_theme_file_uri('js/mousewheel.min.js') ?>"></script>

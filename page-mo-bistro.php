@@ -17,22 +17,40 @@ $bistroReviews = get_post_field('post_content', 126);
 <script src="<?php echo get_theme_file_uri('js/mousewheel.min.js') ?>"></script>
 <script src="<?php echo get_theme_file_uri('js/jquery.scrollify.js') ?>"></script>
 <script>
-$(function() {
- $.scrollify({
-    section: ".scrollTest , .footer-bottom , #top",
-    setHeights: false,
-    scrollSpeed: 1000,
-    offset: -120,
-    interstitialSection: ".logotest",
-  });
-});
+// $(function() {
+//  $.scrollify({
+//     section: ".scrollTest , .footer-bottom , #top",
+//     setHeights: false,
+//     scrollSpeed: 1000,
+//     offset: -120,
+//     interstitialSection: ".logotest",
+//   });
+// });
 
 </script>
+
+<div class="external-links">
+  <a  class="tripadvisor-link" href="https://www.tripadvisor.fr/Restaurant_Review-g1021467-d12626736-Reviews-Mo_Vegetarian_Bistro-Aljezur_Faro_District_Algarve.html" target="_blank">
+    <i class="fab fa-tripadvisor"></i>
+    <p class="tripadvisor-text">Trip Advisor</p>
+  </a>
+
+</div>
+<a href="#" class="svglinkCow" id="cowLink">
+    <object id="happycowSvg" style="position:relative;" type="image/svg+xml" data="<?php echo get_theme_file_uri('images/logos/happycow.svg') ?>"></object>
+    <p class="cow-text">Happy Cow</p>
+</a>
+
+
+
+
 <div class="logotest" style="position: absolute;top: 0" id="top"></div>
 <section id="sectionBistro">
   <div class="bistro-picture" style="margin-bottom: 10px;">
 
-
+      <div class="mo-bistro-logo-mobile">
+        <object style="position:relative;" id="svgMoBistro" type="image/svg+xml" data="<?php echo get_theme_file_uri('images/logos/mobistro.svg') ?>"></object>
+      </div>
     <div class=" bistro-pic-xl-0  " style="background-image: url(<?php echo get_theme_file_uri('images/bistro/venue-6-large.jpg') ?>)">
       <div class="mo-bistro-logo">
         <object style="position:relative;" id="svgMoBistro" type="image/svg+xml" data="<?php echo get_theme_file_uri('images/logos/mobistro.svg') ?>"></object>
@@ -169,87 +187,87 @@ $(function() {
 
 </section>
 <script>
-ScrollReveal().reveal('.mo-bistro-logo', {
-  delay: 800,
-  duration: 1000,
-  origin: 'bottom',
-  distance: '150px'
-});
-ScrollReveal().reveal('.bistro-pic', {
-  delay: 800,
-  duration: 1000,
-  origin: 'bottom',
-  distance: '150px',
-  viewOffset: {
-    bottom: 60
-  }
-});
+// ScrollReveal().reveal('.mo-bistro-logo', {
+//   delay: 800,
+//   duration: 1000,
+//   origin: 'bottom',
+//   distance: '150px'
+// });
+// ScrollReveal().reveal('.bistro-pic', {
+//   delay: 800,
+//   duration: 1000,
+//   origin: 'bottom',
+//   distance: '150px',
+//   viewOffset: {
+//     bottom: 60
+//   }
+// });
 
-ScrollReveal().reveal('.xl-left', {
-  delay: 500,
-  duration: 1000,
-  origin: 'left',
-  distance: '150px',
-  viewOffset: {
-    bottom: 60
-  }
-});
-ScrollReveal().reveal('.xl-right', {
-  delay: 500,
-  duration: 1000,
-  origin: 'left',
-  distance: '150px',
-  viewOffset: {
-    bottom: 70
-  }
-});
-ScrollReveal().reveal('.pic-tall-right', {
-  delay: 500,
-  duration: 1000,
-  origin: 'right',
-  distance: '150px',
-  viewOffset: {
-    bottom: 60
-  }
-});
-ScrollReveal().reveal('.pic-tall-left', {
-  delay: 500,
-  duration: 1000,
-  origin: 'left',
-  distance: '150px',
-  viewOffset: {
-    bottom: 60
-  }
-});
+// ScrollReveal().reveal('.xl-left', {
+//   delay: 500,
+//   duration: 1000,
+//   origin: 'left',
+//   distance: '150px',
+//   viewOffset: {
+//     bottom: 60
+//   }
+// });
+// ScrollReveal().reveal('.xl-right', {
+//   delay: 500,
+//   duration: 1000,
+//   origin: 'left',
+//   distance: '150px',
+//   viewOffset: {
+//     bottom: 70
+//   }
+// });
+// ScrollReveal().reveal('.pic-tall-right', {
+//   delay: 500,
+//   duration: 1000,
+//   origin: 'right',
+//   distance: '150px',
+//   viewOffset: {
+//     bottom: 60
+//   }
+// });
+// ScrollReveal().reveal('.pic-tall-left', {
+//   delay: 500,
+//   duration: 1000,
+//   origin: 'left',
+//   distance: '150px',
+//   viewOffset: {
+//     bottom: 60
+//   }
+// });
 
-ScrollReveal().reveal('.square-1', {
-  delay: 500,
-  duration: 1000,
-  origin: 'left',
-  distance: '150px',
-  viewOffset: {
-    bottom: 60
-  }
-});
-ScrollReveal().reveal('.square-2', {
-  delay: 500,
-  duration: 1000,
-  origin: 'right',
-  distance: '150px',
-  viewOffset: {
-    bottom: 60
-  }
-});
+// ScrollReveal().reveal('.square-1', {
+//   delay: 500,
+//   duration: 1000,
+//   origin: 'left',
+//   distance: '150px',
+//   viewOffset: {
+//     bottom: 60
+//   }
+// });
+// ScrollReveal().reveal('.square-2', {
+//   delay: 500,
+//   duration: 1000,
+//   origin: 'right',
+//   distance: '150px',
+//   viewOffset: {
+//     bottom: 60
+//   }
+// });
 
-ScrollReveal().reveal('.bistro-pic-xl-5', {
-  delay: 500,
-  duration: 1000,
-  origin: 'right',
-  distance: '150px',
-  viewOffset: {
-    bottom: 300
-  }
-});
+// ScrollReveal().reveal('.bistro-pic-xl-5', {
+//   delay: 500,
+//   duration: 1000,
+//   origin: 'right',
+//   distance: '150px',
+//   viewOffset: {
+//     bottom: 100
+//   }
+// });
 
 $(document).ready(function() {
   $("#reviewsList").lightSlider({
@@ -259,6 +277,23 @@ $(document).ready(function() {
   });
   $('.lSNext')[0].innerHTML = '<i class="fas fa-arrow-right"></i>'
   $('.lSPrev')[0].innerHTML = '<i class="fas fa-arrow-left"></i>'
+
+  const svgCow = document.getElementById('happycowSvg');
+  const svgCowContent = svgCow.contentDocument;
+  const cowPath = svgCowContent.querySelectorAll('path');
+
+
+  document.getElementById('cowLink').addEventListener('mouseover', function() {
+      cowPath.forEach(function(path) {
+          path.classList.add('hover-link');
+    });
+  });
+
+  document.getElementById('cowLink').addEventListener('mouseout', function() {
+    cowPath.forEach(function(path) {
+      path.classList.remove('hover-link');
+    });
+  });
 });
 
 

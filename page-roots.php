@@ -167,7 +167,7 @@
           .reset()
           .play();
          // $('#ruiJob').delay(8500).fadeIn(2000);
-         $('#ruiJob').delay(9700).animate({opacity: 1}, 2000);
+         $('#ruiJob').delay(8000).animate({opacity: 1}, 2000);
 
     }
 };

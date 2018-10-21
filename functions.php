@@ -6,7 +6,7 @@ add_action( 'wp_head', 'twentyfifteen_javascript_detection', 0 );
 
   function Moagem_files() {
 
-    wp_enqueue_style("font-awesome", "//use.fontawesome.com/releases/v5.3.1/css/all.css");
+    wp_enqueue_style("font-awesome", "//use.fontawesome.com/releases/v5.4.1/css/all.css");
     wp_enqueue_style('custom-font-1', 'Aleo-Light.otf');
     wp_enqueue_style('custom-font-2', 'Arimo-Regular.otf');
     wp_enqueue_style( 'Moagem_main_styles', get_stylesheet_uri('style.css') );
@@ -56,6 +56,7 @@ function Moagem_features() {
 }
 
 add_action('after_setup_theme', 'Moagem_features');
+
 
 
  ?>
