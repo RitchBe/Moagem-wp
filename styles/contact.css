@@ -22,3 +22,92 @@
   color: #C7BBA4;
 
 }
+
+.google-iframe {
+  width: 600px;
+  height: 480px;
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 800px) {
+  #contactSection {
+    flex-direction: column;
+    height: 150vh;
+    -webkit-justify-content: space-evenly;
+            justify-content: space-evenly;
+    padding-top: 85px;
+  }
+  .google-iframe {
+    width: 90vh;
+    height: 50vh;
+  }
+   .google-maps {
+        position: relative;
+        padding-bottom: 75%; // This is the aspect ratio
+        height: 0;
+        overflow: hidden;
+        width: 90vw;
+    }
+    .google-maps iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
+    }
+   div.contact-content {
+      padding: 50px;
+    }
+}
+
+
+
+@media screen and (min-width: 600px) and (max-width: 800px) {
+  #contactSection {
+    height: 200vh;
+  }
+
+}
+
+
+@media screen and (min-width: 800px) and (max-width: 1024px) {
+     .google-maps {
+        position: relative;
+        padding-bottom: 50%; // This is the aspect ratio
+        height: 0;
+        overflow: hidden;
+        width: 40vw;
+    }
+    .google-maps iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    .contact-content {
+      width: 40vw;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+     .google-maps {
+        position: relative;
+        padding-bottom: 50%; // This is the aspect ratio
+        height: 0;
+        overflow: hidden;
+        width: 40vw;
+    }
+    .google-maps iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    .contact-content {
+      width: 40vw;
+    }
+}

@@ -17,15 +17,20 @@ $bistroReviews = get_post_field('post_content', 126);
 <script src="<?php echo get_theme_file_uri('js/mousewheel.min.js') ?>"></script>
 <script src="<?php echo get_theme_file_uri('js/jquery.scrollify.js') ?>"></script>
 <script>
-// $(function() {
-//  $.scrollify({
-//     section: ".scrollTest , .footer-bottom , #top",
-//     setHeights: false,
-//     scrollSpeed: 1000,
-//     offset: -120,
-//     interstitialSection: ".logotest",
-//   });
-// });
+  var mql = window.matchMedia("screen and (min-width: 900px)")
+  if (mql.matches) {
+    $(function() {
+     $.scrollify({
+        section: ".scrollTest , .footer-bottom , #top",
+        setHeights: false,
+        scrollSpeed: 1000,
+        offset: -120,
+        interstitialSection: ".logotest",
+        touchScroll: false,
+
+  });
+});
+}
 
 </script>
 
@@ -168,7 +173,7 @@ $bistroReviews = get_post_field('post_content', 126);
 
 
 
-  <div class="bistro-pic bistro-pic-xl-5 scrollTest xl-left" style="background-image: url(<?php echo get_theme_file_uri('images/bistro/salad-1-large.jpg') ?>);background-position: right">
+  <div class="bistro-pic bistro-pic-xl-5 scrollTest xl-left" style="background-image: url(<?php echo get_theme_file_uri('images/bistro/salad-1-large.jpg') ?>);background-position: center">
     </div>
 
     <div class="bistro-pic bistro-pic-tall-8 bistro-list scrollTest pic-tall-left" style="background-image: url(<?php echo get_theme_file_uri('images/bistro/toast-tall.jpg') ?>);background-position: bottom;">
@@ -187,87 +192,87 @@ $bistroReviews = get_post_field('post_content', 126);
 
 </section>
 <script>
-// ScrollReveal().reveal('.mo-bistro-logo', {
-//   delay: 800,
-//   duration: 1000,
-//   origin: 'bottom',
-//   distance: '150px'
-// });
-// ScrollReveal().reveal('.bistro-pic', {
-//   delay: 800,
-//   duration: 1000,
-//   origin: 'bottom',
-//   distance: '150px',
-//   viewOffset: {
-//     bottom: 60
-//   }
-// });
+ScrollReveal().reveal('.mo-bistro-logo', {
+  delay: 800,
+  duration: 1000,
+  origin: 'bottom',
+  distance: '150px'
+});
+ScrollReveal().reveal('.bistro-pic', {
+  delay: 800,
+  duration: 1000,
+  origin: 'bottom',
+  distance: '150px',
+  viewOffset: {
+    bottom: 60
+  }
+});
 
-// ScrollReveal().reveal('.xl-left', {
-//   delay: 500,
-//   duration: 1000,
-//   origin: 'left',
-//   distance: '150px',
-//   viewOffset: {
-//     bottom: 60
-//   }
-// });
-// ScrollReveal().reveal('.xl-right', {
-//   delay: 500,
-//   duration: 1000,
-//   origin: 'left',
-//   distance: '150px',
-//   viewOffset: {
-//     bottom: 70
-//   }
-// });
-// ScrollReveal().reveal('.pic-tall-right', {
-//   delay: 500,
-//   duration: 1000,
-//   origin: 'right',
-//   distance: '150px',
-//   viewOffset: {
-//     bottom: 60
-//   }
-// });
-// ScrollReveal().reveal('.pic-tall-left', {
-//   delay: 500,
-//   duration: 1000,
-//   origin: 'left',
-//   distance: '150px',
-//   viewOffset: {
-//     bottom: 60
-//   }
-// });
+ScrollReveal().reveal('.xl-left', {
+  delay: 500,
+  duration: 1000,
+  origin: 'left',
+  distance: '150px',
+  viewOffset: {
+    bottom: 60
+  }
+});
+ScrollReveal().reveal('.xl-right', {
+  delay: 500,
+  duration: 1000,
+  origin: 'left',
+  distance: '150px',
+  viewOffset: {
+    bottom: 70
+  }
+});
+ScrollReveal().reveal('.pic-tall-right', {
+  delay: 500,
+  duration: 1000,
+  origin: 'right',
+  distance: '150px',
+  viewOffset: {
+    bottom: 60
+  }
+});
+ScrollReveal().reveal('.pic-tall-left', {
+  delay: 500,
+  duration: 1000,
+  origin: 'left',
+  distance: '150px',
+  viewOffset: {
+    bottom: 60
+  }
+});
 
-// ScrollReveal().reveal('.square-1', {
-//   delay: 500,
-//   duration: 1000,
-//   origin: 'left',
-//   distance: '150px',
-//   viewOffset: {
-//     bottom: 60
-//   }
-// });
-// ScrollReveal().reveal('.square-2', {
-//   delay: 500,
-//   duration: 1000,
-//   origin: 'right',
-//   distance: '150px',
-//   viewOffset: {
-//     bottom: 60
-//   }
-// });
+ScrollReveal().reveal('.square-1', {
+  delay: 500,
+  duration: 1000,
+  origin: 'left',
+  distance: '150px',
+  viewOffset: {
+    bottom: 60
+  }
+});
+ScrollReveal().reveal('.square-2', {
+  delay: 500,
+  duration: 1000,
+  origin: 'right',
+  distance: '150px',
+  viewOffset: {
+    bottom: 60
+  }
+});
 
-// ScrollReveal().reveal('.bistro-pic-xl-5', {
-//   delay: 500,
-//   duration: 1000,
-//   origin: 'right',
-//   distance: '150px',
-//   viewOffset: {
-//     bottom: 100
-//   }
-// });
+ScrollReveal().reveal('.bistro-pic-xl-5', {
+  delay: 500,
+  duration: 1000,
+  origin: 'right',
+  distance: '150px',
+  viewOffset: {
+    bottom: 100
+  }
+});
 
 $(document).ready(function() {
   $("#reviewsList").lightSlider({

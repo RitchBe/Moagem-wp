@@ -35,6 +35,80 @@
 }
 
 .creneau {
-
   min-height: 20px;
+}
+
+
+@media screen and (max-width: 770px) {
+  .price {
+    width: 35vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #yogaSection {
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+      height: 120vh;
+  }
+  .price {
+    width: 90vw;
+  }
+  .timetable-container {
+    width: 80vw;
+  }
+}
+
+@media screen and (min-width: 770px ) and (max-width: 1050px) {
+  .timetable-container {
+    width: 80vw;
+    margin-top: 74px;
+    }
+
+    .acttitle {
+      font-size: 10px;
+    }
+}
+
+@media screen and (min-width: 1050px ) and (max-width: 1200px) {
+    .timetable-container {
+    width: 80vw;
+    margin-top: 74px;
+    }
+
+}
+
+@media screen and (min-width: 300px) and (max-width: 950px) and (orientation: landscape) {
+  section#yogaSection {
+    height: 190vh;
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width: 600px) and (max-height: 400px) and (orientation: landscape) {
+  section#yogaSection {
+    height: 272vh;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 400px) {
+  section#yogaSection {
+    height: 160vh;
+  }
+}
+
+
+@media screen and (min-width: 300px) and (min-height: 650px) and (orientation: portrait) {
+  section#yogaSection {
+    height: 112vh;
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-height: 1000px) and (orientation: landscape) {
+  section#yogaSection {
+    height: 110vh;
+  }
+  .acttitle {
+    font-size: 13px;
+  }
 }

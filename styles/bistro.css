@@ -5,6 +5,7 @@
   background-color: #c7bba4;
   flex-direction: column;
   height: auto;
+  overflow: hidden;
 }
 
 .bistro-pic {
@@ -16,8 +17,7 @@
 
 
 
-@media screen and (min-width:700px) {
-
+@media screen and (min-width:700px), screen and (min-width: 600px) and (orientation:landscape) {
   .bistro-picture {
   display: grid;
   grid-template-columns: 30vw 30vw;
@@ -97,6 +97,40 @@
                   align-items: center;
 
     }
+}
+
+@media screen and (min-width: 500px) and (orientation:landscape) and (max-width: 950px){
+  .bistro-picture {
+    grid-template-columns: 45vw 45vw;
+    grid-template-rows: 40vh 40vh 40vh 40vh 40vh 40vh 40vh 40vh 40vh 40vh 40vh 40vh 40vh 40vh 40vw 40vh 40vh 40vh 40vh 40vw 40vh 40vh 40vh 40vh;
+  }
+
+  .content-new p {
+    font-size: 55%
+  }
+
+  div.content-new ul {
+    font-size: 50%;
+  }
+  .content-new h3 {
+    font-size: 70%;
+    margin-bottom: 0
+  }
+   .bistro-pic-tall-8 div.content-new p {
+     margin-top: 0;
+   }
+
+  div.lSAction > a {
+    position: absolute;
+  }
+
+  ul#reviewsList li p {
+    font-size: 100%;
+  }
+  div.mo-bistro-logo {
+    transform: translate(0px, -70px);
+  }
+
 }
 
 .mo-bistro-logo {
@@ -357,17 +391,17 @@ a.svglinkCow {
 /*MEDIA QUERIES --------------------------------------------------*/
 
 
-@media screen and (max-width:700px) {
+@media screen and (max-width:700px) and (orientation:portrait) {
 .bistro-picture {
   display: grid;
   grid-template-columns: 90vw;
   grid-gap: 10px;
 }
   div.bistro-pic {
-  height: 100vh;
+  height: 70vh;
 }
   div.bistro-pic-xl-0, div.bistro-pic-xl, div.xl-left, div.xl-right {
-    height: 60vh;
+    height: 40vh;
     -webkit-background-size: cover;
          -o-background-size: cover;
             background-size: cover;
@@ -384,7 +418,7 @@ a.svglinkCow {
 }
 
 
-@media screen and (max-width:510px) {
+@media screen and (max-width:600px) {
     .mo-bistro-logo {
       display: none;
     }
@@ -397,7 +431,7 @@ a.svglinkCow {
       -webkit-align-items: center;
               align-items: center;
       height: 24vh;
-      min-height: 185px;
+      min-height: 220px;
     }
     .mo-bistro-logo-mobile #svgMoBistro {
       width: 50vw;
@@ -412,7 +446,7 @@ a.svglinkCow {
     }
 
     .bistro-pic-tall-3.content-flex, .bistro-pic-tall-8.content-flex  {
-      height: 150vh;
+      height: 90vh;
 
     }
 
@@ -423,13 +457,51 @@ a.svglinkCow {
     .bistro-pic-tall-3 .content-new, .bistro-pic-tall-8 .content-new {
       padding: 25px;
     }
+}
+
+@media screen and (min-width:600px) {
+  .mo-bistro-logo-mobile {
+    display: none;
+  }
+}
 
 
+@media screen and (min-width: 700px) and (max-width: 1000px) {
+  .mo-bistro-logo {
+    transform: translate(0px, -160px);
+  }
+  .bistro-picture {
+    grid-template-columns: 45vw 45vw;
+  grid-template-rows: 40vh 40vh 40vh 40vh 40vh 40vh 40vh 40vh 40vh 40vh 40vh 40vh 40vh 40vh 70vw 40vh 40vh 40vh 40vh 47vw 40vh 40vh 40vh 40vh;
+
+  }
+  .content-new {
+    font-size: 100%
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+  .bistro-picture {
+    grid-template-columns: 45vw 45vw;
+  grid-template-rows: 40vh 40vh 40vh 40vh 40vh 40vh 40vh 40vh 40vh 40vh 40vh 40vh 40vh 40vh 70vw 40vh 40vh 40vh 40vh 40vw 40vh 40vh 40vh 40vh;
+  }
+    .mo-bistro-logo {
+    transform: translate(0px, -160px);
+  }
 
 }
 
-@media screen and (min-width:510px) {
-  .mo-bistro-logo-mobile {
-    display: none;
+
+
+@media screen and (min-width: 500px) and (max-width: 900px) and (min-height: 300px) and (max-height: 500px)  and (orientation: landscape){
+  .bistro-picture {
+    grid-template-columns: 45vw 45vw;
+    grid-template-rows: 40vh 40vh 40vh 40vh 40vh 40vh 40vh 40vh 40vh 40vh 40vh 40vh 40vh 40vh 70vw 40vh 40vh 40vh 40vh 30vw 40vh 40vh 40vh 40vh;
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width: 400px) {
+  .content-new p {
+    font-size: 80%;
   }
 }

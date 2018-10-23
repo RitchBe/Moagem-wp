@@ -20,9 +20,22 @@
 
 ?>
 
-<div class="main-container-roots">
 
-<section id="sectionRoots1" class="scrollsections">
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="main-container-roots large-display">
+
+<section id="sectionRoots1" class="scrollsections large-display">
   <div class="section-roots-container section-pair">
     <div class="section-pictures">
         <div class="row1" style="background-image: url(<?php echo get_theme_file_uri('images/images-roots/moagem2.jpg') ?>)"></div>
@@ -36,7 +49,7 @@
   </div>
 </section>
 
-<section id="sectionRoots2" class="scrollsections">
+<section id="sectionRoots2" class="scrollsections large-display">
       <div class="section-roots-container ">
 
     <div class="section-pictures">
@@ -51,7 +64,7 @@
 
 </section>
 
-<section id="sectionRoots3" class="scrollsections">
+<section id="sectionRoots3" class="scrollsections large-display">
       <div class="section-roots-container section-pair">
 
     <div class="section-pictures">
@@ -64,7 +77,7 @@
   </div>
 </section>
 
-<section id="sectionRoots4" class="scrollsections">
+<section id="sectionRoots4" class="scrollsections large-display">
       <div class="section-roots-container">
 
     <div class="section-pictures">
@@ -82,12 +95,114 @@
       <object style="position:relative;" id="svgRui" type="image/svg+xml" data="<?php echo get_theme_file_uri('images/images-roots/ruipaths.svg') ?>"></object>
         <p id="ruiJob"><i> Portuguese Association of Industrial Archaeology</i></p>
   </div>
+</div>
 
+</section>
+</div>
+
+
+<!-- MOBILE VERSION -->
+
+<div class="main-container-roots mobile-display">
+
+<section id="sectionRootsMobile1" class="mobile-section">
+    <div class="title-mobile">
+      <h2 class="roots-title">The Aljezur Flour Mill</h2>
+      <div class="title-content"><?php echo $rootsPart1 ?></div>
+      </div>
+</section>
+
+
+<section id="sectionRootsMobile1Photo" class="mobile-section mobile-picture">
+    <div class="section-roots-container-mobile">
+    <div class="section-pictures-mobile">
+        <div class="row1" style="background-image: url(<?php echo get_theme_file_uri('images/images-roots/moagem2.jpg') ?>)"></div>
+        <div class="row2" style="background-image: url(<?php echo get_theme_file_uri('images/images-roots/moagem4.jpg') ?>)"> </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="sectionRootsMobile2" class="mobile-section">
+    <div class="title-mobile">
+      <div class="title-content"><?php echo $rootsPart2 ?></div>
+      </div>
+</section>
+
+
+<section id="sectionRootsMobile2Photo" class="mobile-section mobile-picture">
+    <div class="section-roots-container-mobile">
+    <div class="section-pictures-mobile">
+        <div class="row1" style="background-image: url(<?php echo get_theme_file_uri('images/images-roots/roots2.jpg') ?>)"></div>
+        <div class="row2" style="background-image: url(<?php echo get_theme_file_uri('images/images-roots/roots3.jpg') ?>)"> </div>
+    </div>
+  </div>
+</section>
+
+<section id="sectionRootsMobile3" class="mobile-section">
+    <div class="title-mobile">
+      <div class="title-content"><?php echo $rootsPart3 ?></div>
+      </div>
+</section>
+
+
+<section id="sectionRootsMobile3Photo" class="mobile-section mobile-picture">
+    <div class="section-roots-container-mobile">
+    <div class="section-pictures-mobile">
+      <div class="fullrow" style="background-image: url(<?php echo get_theme_file_uri('images/images-roots/flourmill.jpg') ?>);background-position: bottom"></div>
+    </div>
+  </div>
+</section>
+
+<section id="sectionRootsMobile4" class="mobile-section">
+    <div class="title-mobile">
+      <div class="title-content"><?php echo $rootsPart4 ?>
+        <object style="position:relative;" id="svgRuiMobil" type="image/svg+xml" data="<?php echo get_theme_file_uri('images/images-roots/ruipaths.svg') ?>"></object>
+        <p id="ruiJob"><i> Portuguese Association of Industrial Archaeology</i></p>
+      </div>
+      </div>
+</section>
+
+
+<section id="sectionRootsMobile4Photo" class="mobile-section mobile-picture">
+    <div class="section-roots-container-mobile">
+    <div class="section-pictures-mobile">
+        <div class="row1" style="background-image: url(<?php echo get_theme_file_uri('images/images-roots/small.png') ?>);background-position: center;"></div>
+        <div class="row2" style="background-image: url(<?php echo get_theme_file_uri('images/images-roots/small3.png') ?>);background-position: bottom"></div>
+    </div>
+  </div>
 </section>
 
 
 
+</div>
+
+
+
+<?php get_footer(); ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <script>
+
+ var mql = window.matchMedia("screen and (min-width: 900px)")
+  if (mql.matches) {
   $(function() {
 
     $('section.scrollsections .title').hide(); // Hide all titles
@@ -100,7 +215,8 @@
         navigation: true,
         createNavigation: true,
         scrollbar: true,
-        animateScrollToFirstSection: false,
+        animateScrollToFirstSection: true,
+        touch: true,
 
         before: function($currentSection, $nextSection){
 
@@ -152,6 +268,7 @@
 
     }
   });
+}
 </script>
 
 <script>

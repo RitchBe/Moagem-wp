@@ -13,8 +13,6 @@
             justify-content: flex-start;
     -webkit-align-items: center;
             align-items: center;
-    padding-left: 20px;
-    padding-right: 20px;
     position: fixed;
     width: 100vw;
     -webkit-transition: 1s;
@@ -42,6 +40,8 @@
 .nav-links {
   padding-right: 50px;
 }
+
+
 
 /* Style the links inside the navigation bar */
 .topnav a {
@@ -77,6 +77,11 @@
 #BistroLogoNav {
   width: 130px;
   padding-bottom: 3px;
+}
+
+#cafeSvg {
+  width: 105px;
+  padding-bottom: 2px;
 }
 
 .active #BistroLogoNav.fill path {
@@ -116,13 +121,16 @@
   width: 137px;
 }
 
-a.change-language {
-  padding-right: 50px;
+a.change-language,a.change-language-mobile {
   font-family: 'Cocosignummaiuscoletto';
   font-size: 20px;
   position: absolute;
-  top: 23px;
+  top: 25px;
   right: 50px;
+}
+
+a.change-language-mobile {
+  display: none;
 }
 
 a.active .svgNav path, a.active .svgNav text{
@@ -146,6 +154,7 @@ a.active .svgNav path, a.active .svgNav text{
   /* Resize all logo to be resp */
   .svgNav {width: 97px;}
   #BistroLogoNav {width: 110px;}
+  #cafeSVg {width: 85px;}
   #svgEvent {width: 65px;}
   #svgEventos {width: 79px;}
   #svgYoga {width: 55px;}
@@ -164,7 +173,13 @@ a.active .svgNav path, a.active .svgNav text{
     display: -webkit-inline-box;
   }
 
-
+ a.change-language {
+   display: block !important;
+   font-size: 17px;
+   top: 23px;
+   right: 20vw;
+   padding-right: 0;
+ }
 
   .topnav.responsive a.icon {
     position: absolute;
@@ -175,6 +190,7 @@ a.active .svgNav path, a.active .svgNav text{
   div.topnav {
     top: 0;
     padding: 0 !important;
+    background: #717171;
   }
 
   .topnav.responsive {
@@ -193,6 +209,8 @@ a.active .svgNav path, a.active .svgNav text{
     height: 40px;
     display: block;
     padding: none;
+    font-family: 'Cocosignummaiuscoletto';
+    font-size: 20px;
   }
 
   .nav-link .svgNav {

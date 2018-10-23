@@ -22,6 +22,8 @@
 ?>
 
 <script>
+  var mql = window.matchMedia("screen and (min-width: 900px)")
+  if (mql.matches) {
     $(function() {
         $.scrollify({
             section : ".scrollTest, .footer-bottom",
@@ -32,6 +34,7 @@
             touchScroll: false,
           });
         });
+  }
 
 </script>
 
@@ -64,9 +67,9 @@ is now a cultural centre for turning creative ideas into productive collaboratio
 </div>
 
   <div class="mission-picture">
-    <div class="pic pic-tall" style="background-image: url(<?php echo get_theme_file_uri('images/moagem/moaempic6.jpg') ?>)"></div>
-    <div class="pic pic-large-1" style="background-image: url(<?php echo get_theme_file_uri('images/moagem/large1.jpg') ?>)"></div>
-    <div class="pic pic-large-2" style="background-image: url(<?php echo get_theme_file_uri('images/moagem/inside2.jpg') ?>)"></div>
+    <div class="pic pic-tall" style="background-image: url(<?php echo get_theme_file_uri('images/moagem/moaempic6.jpg') ?>);background-position: center"></div>
+    <div class="pic pic-large-1" style="background-image: url(<?php echo get_theme_file_uri('images/moagem/large1.jpg') ?>);background-position: center"></div>
+    <div class="pic pic-large-2" style="background-image: url(<?php echo get_theme_file_uri('images/moagem/inside2.jpg') ?>);background-position: center"></div>
   </div>
 </section>
 

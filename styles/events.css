@@ -1,0 +1,21 @@
+
+div.event-container {
+  height: 100vh;
+  display: flex;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-align-items: center;
+          align-items: center;
+  background: #c7bba4;
+}
+
+div.event-wrapper {
+  width: 500px;
+}
+
+
+@media screen and (max-width: 500px) {
+  div.event-wrapper {
+    width: 300px;
+  }
+}
